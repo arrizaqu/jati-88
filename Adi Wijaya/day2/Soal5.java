@@ -1,0 +1,32 @@
+package java88logic.xsis.bootcamp88.logic.day2;
+
+import java.util.Scanner;
+
+public class Soal5 {
+
+
+	public void proses(){
+		Scanner s = new Scanner(System.in);
+		System.out.print("masukkan angka: ");
+		int n = s.nextInt();
+		int m = -1;
+		
+		System.out.println("Soal5");
+		for(int i=1; i<n; i++){
+			m = m + 2;
+			for(int j=1; j<n; j++){
+				if(i>=j){
+					System.out.print(m + "\t");
+				}
+				
+			}
+			System.out.println();
+		}
+		s.close();
+	}
+	
+	public static void main(String[] args) {
+		Soal5 der = new Soal5();
+		der.proses();
+	}
+}
